@@ -1,0 +1,58 @@
+fun factorialRecursivo( n ) 
+    if (n == 0 or n == 1) 
+         1
+    else
+        n * factorialRecursivo(n-1)
+    end
+end
+
+let y = 4 in 
+    print( factorialRecursivo(y))
+end 
+
+
+//////////////////////////////////////////////////////////////////
+
+fun a (x)   
+    if(length(x) == 1)
+        itos(head((x)))
+    else
+      itos(head(x)) # a(tail(x))
+    end
+end
+
+let w = [1, 2, 3, 4, 6] in 
+       a(w)
+    end
+
+
+////////////////////////////////////////////////////////////////////////
+
+fun a (x)   
+    if(length(x) == 1)
+        rtoi(head((x)))
+    else
+      rtoi(head(x)) + a(tail(x))
+    end
+end
+
+let w = [ 2.5, 3.5, 4.2, 6.2] in 
+       a(w)
+    end
+    
+
+    /////////////////////////////
+    fun calcularPromedio(x) 
+    if(length(x) == 1)
+        (head(x))
+    else
+      (head(x)) + calcularPromedio(tail(x))
+    end
+end
+
+
+let w = [1.2 , 2.3 , 3.4 ] in
+  print( calcularPromedio(w) / itor(length(w)) )  
+end
+
+   
